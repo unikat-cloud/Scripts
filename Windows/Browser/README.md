@@ -1,4 +1,4 @@
-So verwendest du die Skripte:
+#So verwendest du die Skripte:
 
 
 Kopiere den ausgewählten Code in eine Textdatei.
@@ -13,7 +13,7 @@ Navigiere zum Speicherort der .ps1-Datei (z. B. cd C:\Pfad\zum\Skript).
 
 Führe das Skript aus: .\install_app.ps1.
 
-Erklärung:
+#Erklärung:
 
 
 $env:TEMP: Ruft den Pfad zum temporären Verzeichnis des Benutzers ab.
@@ -24,7 +24,7 @@ Start-Process -Wait: Führt das Installationsprogramm aus und wartet, bis die In
 
 Remove-Item -Force: Löscht das heruntergeladene Installationsprogramm nach der Installation.
 
-Hinweise:
+#Hinweise:
 
 
 Das Skript lädt die 64-Bit-Version der App herunter. Falls du die 32-Bit-Version benötigst, passe die Download-URL entsprechend an.
