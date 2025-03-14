@@ -1,38 +1,28 @@
-#So verwendest du die Skripte:
+# CMD-Skripte zur Installation von Firefox und Chrome
 
+Dieses Repository enthält CMD-Skripte, mit denen du Mozilla Firefox und Google Chrome automatisch unter Windows installieren kannst. Die Skripte laden die Installationsprogramme von den offiziellen Websites herunter, führen die Installation durch und bereinigen anschließend die temporären Dateien.
 
-Kopiere den ausgewählten Code in eine Textdatei.
+## Voraussetzungen
 
-Speichere die Datei mit der Endung .ps1, z. B. install_app.ps1.
+- **Windows-Betriebssystem**: Die Skripte sind für Windows entwickelt.
+- **Administratorrechte**: Du benötigst Administratorrechte, um Software zu installieren.
+- **curl**: Der Befehl `curl` ist ab Windows 10 standardmäßig verfügbar. Falls nicht, kannst du ihn über die Windows-Funktionen aktivieren oder alternativ PowerShell verwenden.
 
-Führe das Skript in PowerShell aus:
+## Anleitung
 
-Öffne PowerShell als Administrator (rechte Maustaste auf das PowerShell-Symbol > Als Administrator ausführen).
+### 1. Skripte herunterladen
 
-Navigiere zum Speicherort der .ps1-Datei (z. B. cd C:\Pfad\zum\Skript).
+1. Lade die gewünschten Skripte aus diesem Repository herunter:
+   - [Firefox-Installationsskript](firefox_install.cmd)
+   - [Chrome-Installationsskript](chrome_install.cmd)
 
-Führe das Skript aus: .\install_app.ps1.
+2. Speichere die Skripte in einem beliebigen Verzeichnis auf deinem Computer, z.B. `C:\Skripte`.
 
-#Erklärung:
+### 2. Skripte ausführen
 
+1. Öffne die Eingabeaufforderung (CMD) als Administrator:
+   - Drücke `Win + X` und wähle **Eingabeaufforderung (Administrator)** oder **Windows PowerShell (Administrator)**.
 
-$env:TEMP: Ruft den Pfad zum temporären Verzeichnis des Benutzers ab.
-
-Invoke-WebRequest: Lädt das Installationsprogramm der App herunter.
-
-Start-Process -Wait: Führt das Installationsprogramm aus und wartet, bis die Installation abgeschlossen ist.
-
-Remove-Item -Force: Löscht das heruntergeladene Installationsprogramm nach der Installation.
-
-#Hinweise:
-
-
-Das Skript lädt die 64-Bit-Version der App herunter. Falls du die 32-Bit-Version benötigst, passe die Download-URL entsprechend an.
-
-Die Option /S (oder andere Installationsparameter) sorgt dafür, dass die App im Hintergrund (stille Installation) installiert wird.
-
-Das Skript muss mit Administratorrechten ausgeführt werden, um die App zu installieren.
-
-Falls die Ausführung von PowerShell-Skripten blockiert ist, kannst du sie mit dem Befehl Set-ExecutionPolicy RemoteSigned -Scope Process temporär aktivieren.
-
-Führe das Skript aus, und die App wird automatisch installiert! 🚀
+2. Navigiere zu dem Verzeichnis, in dem du die Skripte gespeichert hast:
+   ```cmd
+   cd C:\Skripte
