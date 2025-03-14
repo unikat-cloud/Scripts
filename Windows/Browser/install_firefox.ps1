@@ -1,17 +1,24 @@
-# Definieren der URL für den Firefox-Download
-$firefoxUrl = "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=de"
+# Mozilla Firefox wird installiert...
+Write-Host "Mozilla Firefox wird installiert..."
 
-# Definieren des Pfades, wo die Installationsdatei gespeichert werden soll
-$installerPath = "$env:TEMP\FirefoxInstaller.exe"
+# Temporärer Download-Pfad
+$tempDir = $env:TEMP
+$firefoxInstaller = "$tempDir\firefox_installer.exe"
 
-# Herunterladen der Firefox-Installationsdatei
-Invoke-WebRequest -Uri $firefoxUrl -OutFile $installerPath
+# Download-URL für Mozilla Firefox (64-Bit-Version)
+$firefoxURL = "https://download.mozilla.org/?product=firefox-latest&os=win64&lang=de"
 
-# Installieren von Firefox
-Start-Process -FilePath $installerPath -ArgumentList "/S" -Wait
+# Firefox herunterladen
+Write-Host "Lade Mozilla Firefox herunter..."
+Invoke-WebRequest -Uri $firefoxURL -OutFile $firefoxInstaller
 
-# Aufräumen: Löschen der Installationsdatei
-Remove-Item -Path $installerPath
+# Firefox installieren
+Write-Host "Installiere Mozilla Firefox..."
+Start-Process -FilePath $firefoxInstaller -ArgumentList "/S" -Wait
 
-# Erfolgsmeldung
-Write-Host "Firefox wurde erfolgreich installiert."
+# Temporäre Datei bereinigen
+Write-Host "Bereinige temporäre Dateien..."
+Remove-Item -Path $firefoxInstaller -Force
+
+Write-Host "Mozilla Firefox wurde erfolgreich installiert!"
+Read-Host "Drücke Enter, um fortzufahren..."
