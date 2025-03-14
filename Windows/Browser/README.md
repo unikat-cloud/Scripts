@@ -12,9 +12,7 @@ Dieses Repository enthält CMD-Skripte, mit denen du Mozilla Firefox und Google 
 
 ### 1. Skripte herunterladen
 
-1. Lade die gewünschten Skripte aus diesem Repository herunter:
-   - [Firefox-Installationsskript](firefox_install.cmd)
-   - [Chrome-Installationsskript](chrome_install.cmd)
+1. Lade die gewünschten Skripte aus diesem Repository herunter.
 
 2. Speichere die Skripte in einem beliebigen Verzeichnis auf deinem Computer, z.B. `C:\Skripte`.
 
