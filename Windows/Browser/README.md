@@ -1,6 +1,6 @@
-# CMD-Skripte zur Installation von Firefox und Chrome
+# CMD-Skripte zur Installation von Browsern
 
-Dieses Repository enthält CMD-Skripte, mit denen du Mozilla Firefox und Google Chrome automatisch unter Windows installieren kannst. Die Skripte laden die Installationsprogramme von den offiziellen Websites herunter, führen die Installation durch und bereinigen anschließend die temporären Dateien.
+Dieses Repository enthält CMD-Skripte, mit denen du Browser automatisch unter Windows installieren kannst. Die Skripte laden die Installationsprogramme von den offiziellen Websites herunter, führen die Installation durch und bereinigen anschließend die temporären Dateien.
 
 ## Voraussetzungen
 
