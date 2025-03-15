@@ -27,15 +27,7 @@ Dieses Repository enthält CMD-Skripte, mit denen du Mozilla Firefox und Google 
    ```cmd
    cd C:\Skripte
 
-3. Führe das gewünschte Skript aus:
-   - Um Firefox zu installieren:
-     ```cmd
-     firefox_install.cmd
-     ```
-   - Um Chrome zu installieren:
-     ```cmd
-     chrome_install.cmd
-     ```
+3. Führe das gewünschte Skript aus.
 
 4. Warte, bis das Skript die Installation abgeschlossen hat. Du siehst eine Bestätigungsmeldung, sobald die Installation erfolgreich war.
 
@@ -56,5 +48,3 @@ Diese Skripte sind frei verfügbar und können nach Belieben verwendet und modif
 ---
 
 Bei Fragen oder Problemen kannst du ein Issue in diesem Repository öffnen oder dich an den Autor wenden.
-```
-
