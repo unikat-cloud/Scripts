@@ -1,3 +1,4 @@
+```markdown
 # CMD-Skripte zur Installation von Firefox und Chrome
 
 Dieses Repository enthält CMD-Skripte, mit denen du Mozilla Firefox und Google Chrome automatisch unter Windows installieren kannst. Die Skripte laden die Installationsprogramme von den offiziellen Websites herunter, führen die Installation durch und bereinigen anschließend die temporären Dateien.
@@ -12,7 +13,9 @@ Dieses Repository enthält CMD-Skripte, mit denen du Mozilla Firefox und Google 
 
 ### 1. Skripte herunterladen
 
-1. Lade die gewünschten Skripte aus diesem Repository herunter.
+1. Lade die gewünschten Skripte aus diesem Repository herunter:
+   - [Firefox-Installationsskript](firefox_install.cmd)
+   - [Chrome-Installationsskript](chrome_install.cmd)
 
 2. Speichere die Skripte in einem beliebigen Verzeichnis auf deinem Computer, z.B. `C:\Skripte`.
 
@@ -24,3 +27,36 @@ Dieses Repository enthält CMD-Skripte, mit denen du Mozilla Firefox und Google 
 2. Navigiere zu dem Verzeichnis, in dem du die Skripte gespeichert hast:
    ```cmd
    cd C:\Skripte
+   ```
+
+3. Führe das gewünschte Skript aus:
+   - Um Firefox zu installieren:
+     ```cmd
+     firefox_install.cmd
+     ```
+   - Um Chrome zu installieren:
+     ```cmd
+     chrome_install.cmd
+     ```
+
+4. Warte, bis das Skript die Installation abgeschlossen hat. Du siehst eine Bestätigungsmeldung, sobald die Installation erfolgreich war.
+
+### 3. Optionen
+
+- **Stille Installation**: Die Skripte führen standardmäßig eine stille Installation durch, d.h. ohne Benutzerinteraktion. Wenn du die Installation mit Benutzeroberfläche möchtest, bearbeite die Skripte und entferne die Parameter `-ms` (Firefox) oder `/silent /install` (Chrome).
+- **Temporäre Dateien**: Die Installationsprogramme werden im temporären Ordner (`%TEMP%`) gespeichert und nach der Installation automatisch gelöscht.
+
+## Wichtige Hinweise
+
+- **Sicherheit**: Lade Skripte nur aus vertrauenswürdigen Quellen herunter. Die Skripte in diesem Repository verweisen auf die offiziellen Download-Links von Mozilla und Google.
+- **Fehlerbehebung**: Falls ein Skript nicht funktioniert, überprüfe, ob `curl` verfügbar ist und ob du Administratorrechte hast.
+
+## Lizenz
+
+Diese Skripte sind frei verfügbar und können nach Belieben verwendet und modifiziert werden. Es wird keine Haftung für Schäden übernommen, die durch die Verwendung dieser Skripte entstehen.
+
+---
+
+Bei Fragen oder Problemen kannst du ein Issue in diesem Repository öffnen oder dich an den Autor wenden.
+```
+
